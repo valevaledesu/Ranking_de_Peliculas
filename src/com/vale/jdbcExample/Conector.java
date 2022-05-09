@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Conector {
 	
 	private String urlConeccion;
-	private Connection conn = null;
+	protected Connection conn = null;
 	
 	public Conector (String urlConeccion) {
 		
