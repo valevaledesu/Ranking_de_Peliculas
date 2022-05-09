@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JList;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
+import javax.swing.ImageIcon;
 
 public class Ranking extends JFrame {
 
@@ -75,5 +76,42 @@ public class Ranking extends JFrame {
 		});
 		btnNewButton.setBounds(481, 10, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		JLabel portada1 = new JLabel("New label");
+		portada1.setIcon(new ImageIcon(Ranking.class.getResource("/portadas/climax.jpg")));
+		portada1.setBounds(25, 46, 168, 95);
+		contentPane.add(portada1);
+		
+		JLabel lblcalif = new JLabel("Calificacion");
+		lblcalif.setBounds(52, 193, 76, 14);
+		contentPane.add(lblcalif);
+		
+		JLabel lblnombre = new JLabel("New label");
+		lblnombre.setBounds(52, 152, 46, 14);
+		contentPane.add(lblnombre);
+		
+		JLabel portada2 = new JLabel("New label");
+		portada2.setBounds(258, 110, 46, 14);
+		contentPane.add(portada2);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("New label");
+		lblNewLabel_2_1.setBounds(258, 152, 46, 14);
+		contentPane.add(lblNewLabel_2_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("New label");
+		lblNewLabel_1_1.setBounds(258, 193, 46, 14);
+		contentPane.add(lblNewLabel_1_1);
+		
+		JLabel lblNewLabel_2_1_1 = new JLabel("New label");
+		lblNewLabel_2_1_1.setBounds(425, 152, 46, 14);
+		contentPane.add(lblNewLabel_2_1_1);
+		
+		JLabel portada3 = new JLabel("New label");
+		portada3.setBounds(425, 110, 46, 14);
+		contentPane.add(portada3);
+		
+		JLabel lblNewLabel_1_1_1 = new JLabel("New label");
+		lblNewLabel_1_1_1.setBounds(425, 193, 46, 14);
+		contentPane.add(lblNewLabel_1_1_1);
 	}
 }
