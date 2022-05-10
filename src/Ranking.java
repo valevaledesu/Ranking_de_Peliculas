@@ -1,3 +1,5 @@
+package src;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -11,7 +13,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JList;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import javax.swing.ImageIcon;
@@ -42,7 +43,7 @@ public class Ranking extends JFrame {
 	 */
 	public Ranking() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 596, 502);
+		setBounds(100, 100, 596, 506);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -68,7 +69,7 @@ public class Ranking extends JFrame {
 		txtBuscaPorPelicula.setColumns(10);
 		
 		
-		JButton btnNewButton = new JButton("New button");
+		JButton btnNewButton = new JButton("Buscar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//hacer consulta, primero nombre de pelicula, en caso de no encontrar, por nombre de director
@@ -79,39 +80,59 @@ public class Ranking extends JFrame {
 		
 		JLabel portada1 = new JLabel("New label");
 		portada1.setIcon(new ImageIcon(Ranking.class.getResource("/portadas/climax.jpg")));
-		portada1.setBounds(25, 46, 168, 95);
+		portada1.setBounds(10, 46, 148, 159);
 		contentPane.add(portada1);
 		
 		JLabel lblcalif = new JLabel("Calificacion");
-		lblcalif.setBounds(52, 193, 76, 14);
+		lblcalif.setBounds(51, 311, 76, 14);
 		contentPane.add(lblcalif);
 		
-		JLabel lblnombre = new JLabel("New label");
-		lblnombre.setBounds(52, 152, 46, 14);
+		JLabel lblnombre = new JLabel("Director");
+		lblnombre.setBounds(51, 260, 46, 14);
 		contentPane.add(lblnombre);
 		
-		JLabel portada2 = new JLabel("New label");
-		portada2.setBounds(258, 110, 46, 14);
-		contentPane.add(portada2);
-		
-		JLabel lblNewLabel_2_1 = new JLabel("New label");
-		lblNewLabel_2_1.setBounds(258, 152, 46, 14);
-		contentPane.add(lblNewLabel_2_1);
-		
-		JLabel lblNewLabel_1_1 = new JLabel("New label");
-		lblNewLabel_1_1.setBounds(258, 193, 46, 14);
+		JLabel lblNewLabel_1_1 = new JLabel("TITULO");
+		lblNewLabel_1_1.setBounds(51, 216, 46, 14);
 		contentPane.add(lblNewLabel_1_1);
 		
-		JLabel lblNewLabel_2_1_1 = new JLabel("New label");
-		lblNewLabel_2_1_1.setBounds(425, 152, 46, 14);
-		contentPane.add(lblNewLabel_2_1_1);
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.setBounds(481, 374, 89, 23);
+		contentPane.add(btnNewButton_1);
 		
-		JLabel portada3 = new JLabel("New label");
-		portada3.setBounds(425, 110, 46, 14);
-		contentPane.add(portada3);
+		JButton btnNewButton_1_1 = new JButton("New button");
+		btnNewButton_1_1.setBounds(25, 374, 89, 23);
+		contentPane.add(btnNewButton_1_1);
 		
-		JLabel lblNewLabel_1_1_1 = new JLabel("New label");
-		lblNewLabel_1_1_1.setBounds(425, 193, 46, 14);
+		JLabel portada1_1 = new JLabel("New label");
+		portada1_1.setBounds(193, 46, 148, 159);
+		contentPane.add(portada1_1);
+		
+		JLabel lblcalif_1 = new JLabel("Calificacion");
+		lblcalif_1.setBounds(240, 311, 76, 14);
+		contentPane.add(lblcalif_1);
+		
+		JLabel portada1_1_1 = new JLabel("New label");
+		portada1_1_1.setBounds(401, 46, 148, 159);
+		contentPane.add(portada1_1_1);
+		
+		JLabel lblcalif_1_1 = new JLabel("Calificacion");
+		lblcalif_1_1.setBounds(453, 311, 76, 14);
+		contentPane.add(lblcalif_1_1);
+		
+		JLabel lblNewLabel_1_1_1 = new JLabel("TITULO");
+		lblNewLabel_1_1_1.setBounds(240, 216, 46, 14);
 		contentPane.add(lblNewLabel_1_1_1);
+		
+		JLabel lblNewLabel_1_1_2 = new JLabel("TITULO");
+		lblNewLabel_1_1_2.setBounds(453, 216, 46, 14);
+		contentPane.add(lblNewLabel_1_1_2);
+		
+		JLabel lblnombre_1 = new JLabel("Director");
+		lblnombre_1.setBounds(240, 260, 46, 14);
+		contentPane.add(lblnombre_1);
+		
+		JLabel lblnombre_2 = new JLabel("Director");
+		lblnombre_2.setBounds(453, 260, 46, 14);
+		contentPane.add(lblnombre_2);
 	}
 }
