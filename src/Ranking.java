@@ -1,6 +1,3 @@
-package src;
-
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -80,19 +77,19 @@ public class Ranking extends JFrame {
 		
 		JLabel portada1 = new JLabel("New label");
 		portada1.setIcon(new ImageIcon(Ranking.class.getResource("/portadas/climax.jpg")));
-		portada1.setBounds(10, 46, 148, 159);
+		portada1.setBounds(10, 46, 193, 235);
 		contentPane.add(portada1);
 		
 		JLabel lblcalif = new JLabel("Calificacion");
-		lblcalif.setBounds(51, 311, 76, 14);
+		lblcalif.setBounds(51, 377, 76, 14);
 		contentPane.add(lblcalif);
 		
 		JLabel lblnombre = new JLabel("Director");
-		lblnombre.setBounds(51, 260, 46, 14);
+		lblnombre.setBounds(64, 328, 46, 14);
 		contentPane.add(lblnombre);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("TITULO");
-		lblNewLabel_1_1.setBounds(51, 216, 46, 14);
+		lblNewLabel_1_1.setBounds(51, 283, 46, 14);
 		contentPane.add(lblNewLabel_1_1);
 		
 		JButton btnNewButton_1 = new JButton("New button");
@@ -100,11 +97,11 @@ public class Ranking extends JFrame {
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_1_1 = new JButton("New button");
-		btnNewButton_1_1.setBounds(25, 374, 89, 23);
+		btnNewButton_1_1.setBounds(38, 423, 89, 23);
 		contentPane.add(btnNewButton_1_1);
 		
 		JLabel portada1_1 = new JLabel("New label");
-		portada1_1.setBounds(193, 46, 148, 159);
+		portada1_1.setBounds(275, 11, 148, 159);
 		contentPane.add(portada1_1);
 		
 		JLabel lblcalif_1 = new JLabel("Calificacion");
@@ -112,7 +109,7 @@ public class Ranking extends JFrame {
 		contentPane.add(lblcalif_1);
 		
 		JLabel portada1_1_1 = new JLabel("New label");
-		portada1_1_1.setBounds(401, 46, 148, 159);
+		portada1_1_1.setBounds(469, 11, 148, 159);
 		contentPane.add(portada1_1_1);
 		
 		JLabel lblcalif_1_1 = new JLabel("Calificacion");
