@@ -64,7 +64,7 @@ public class DirectorDAO extends Conector {
 			System.out.println(director.getNombre());
 		}
 		
-		Director director = directorDao.getById(3);
+		Director director = directorDao.getById(2);
 		
 		System.out.print(director.getNacionalidad());
 	}

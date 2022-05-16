@@ -82,7 +82,20 @@ public class PeliculaDAO extends Conector {
 			System.out.println(peli.getNombre());
 		}
 
-		ArrayList<Pelicula> peliculasDirec = peliculaDao.getAllPeliculasDirector(new Director(1, "", ""));
+		ArrayList<Pelicula> peliculasDirec = peliculaDao.getAllPeliculasDirector(new Director(5, "", ""));
+
+		for (Pelicula peli : peliculasDirec) {
+			System.out.println(peli.getDirector().getNombre());
+		}
+		
+		
+		DirectorDAO dirDao = new DirectorDAO(
+				"jdbc:mariadb://127.0.0.1:3306/rankingpeliculasdb?user=root&password=");
+		
+		
+		Director direc = dirDao.getById(1);
+		
+		peliculasDirec = peliculaDao.getAllPeliculasDirector(direc);
 
 		for (Pelicula peli : peliculasDirec) {
 			System.out.println(peli.getDirector().getNombre());
