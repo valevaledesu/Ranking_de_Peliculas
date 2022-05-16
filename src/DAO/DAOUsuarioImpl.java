@@ -10,8 +10,9 @@ import com.vale.jdbcExample.Conector;
 import entidades.Usuario;
 import interfaces.DAOUsuario;
 
-public class DAOUsuarioImpl extends Conector implements DAOUsuario {
+public class DAOUsuarioImpl /*extends Conector implements DAOUsuario */{
 
+	/*
 	public DAOUsuarioImpl(String urlConeccion) {
 		super(urlConeccion);
 
@@ -111,8 +112,8 @@ public class DAOUsuarioImpl extends Conector implements DAOUsuario {
 	}
 
 	public void buscar(Usuario us) throws Exception {
-		// TODO Auto-generated method stub
 		
-	}
+		
+	}*/
 
 }

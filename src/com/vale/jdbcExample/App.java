@@ -12,7 +12,7 @@ public class App
 {
 	public static void main( String[] args )
     {
-    	Conector miConector = new Conector("jdbc:mariadb://127.0.0.1:3306/PeliculasDB?user=root&password=");
+    	Conector miConector = new Conector("jdbc:mariadb://127.0.0.1:3306/rankingpeliculasdb?user=root&password=");
     	
     	ResultSet responseData;
     	miConector.conectar();

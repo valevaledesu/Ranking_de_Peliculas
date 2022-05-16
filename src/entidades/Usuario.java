@@ -3,58 +3,44 @@ package entidades;
 public class Usuario {
 
 	public int id;
-	public String nombre;
-	public String email;
-	public String contraseña;
-	public String nacimiento;
-	
-	
-	
-	public Usuario(String nombre, String email, String contraseña, String nacimiento) {
-		super();
-		this.nombre = nombre;
-		this.email = email;
-		this.contraseña = contraseña;
-		this.nacimiento = nacimiento;
-	}
-	
-	public Usuario(int id, String nombre, String email, String contraseña, String nacimiento) {
+	public String username;
+	public String contrasena;
+
+	public Usuario(int id, String username, String contrasena) {
 		super();
 		this.id = id;
-		this.nombre = nombre;
-		this.email = email;
-		this.contraseña = contraseña;
-		this.nacimiento = nacimiento;
+		this.username = username;
+		this.contrasena = contrasena;
 	}
+
+	public Usuario(String username, String contrasena) {
+		super();
+		this.username = username;
+		this.contrasena = contrasena;
+	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getNombre() {
-		return nombre;
+
+	public String getUsername() {
+		return username;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	public String getEmail() {
-		return email;
+
+	public String getContrasena() {
+		return contrasena;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
-	public String getContraseña() {
-		return contraseña;
-	}
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
-	}
-	public String getNacimiento() {
-		return nacimiento;
-	}
-	public void setNacimiento(String nacimiento) {
-		this.nacimiento = nacimiento;
-	}
-	
+
 }
